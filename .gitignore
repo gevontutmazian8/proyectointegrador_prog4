@@ -1,0 +1,32 @@
+# Entornos y secretos
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+*.db
+*.sqlite3
+
+# Node / frontend
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+pnpm-debug.log*
+npm-debug.log*
+
+# Editores y sistema
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
