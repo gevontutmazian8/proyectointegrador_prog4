@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Identidad de catálogo impreso: carbón, papel, crema y un acento turquesa. */
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  --color-carbon: #2a2a28;
+  --color-tinta: #1d1d1b;
+  --color-crema: #ece4d3;
+  --color-arena: #f6f1e7;
+  --color-turquesa: #4db6a0;
+  --color-turquesa-oscuro: #2e8c78;
+  --color-ladrillo: #b5452f;
+}
+
+@layer base {
+  body {
+    background-color: #fff;
+    color: var(--color-tinta);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-turquesa);
+    outline-offset: 2px;
+  }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animar-entrada {
+  animation: aparecer 0.25s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animar-entrada {
+    animation: none;
+  }
+}
