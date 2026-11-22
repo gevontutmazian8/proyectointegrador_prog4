@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Identidad de catálogo impreso: carbón, papel, crema y un acento turquesa. */
+/* Identidad de catálogo impreso: carbón, papel, crema y un acento naranja. */
 @theme {
   --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
 
@@ -8,8 +8,8 @@
   --color-tinta: #1d1d1b;
   --color-crema: #ece4d3;
   --color-arena: #f6f1e7;
-  --color-turquesa: #4db6a0;
-  --color-turquesa-oscuro: #2e8c78;
+  --color-naranja: #f2792b;
+  --color-naranja-oscuro: #b84a0e;
   --color-ladrillo: #b5452f;
 }
 
@@ -23,7 +23,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-turquesa);
+    outline: 2px solid var(--color-naranja);
     outline-offset: 2px;
   }
 }

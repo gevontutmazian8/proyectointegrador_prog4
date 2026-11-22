@@ -38,7 +38,7 @@ export default function ProductoCard({ producto }: ProductoCardProps) {
       </div>
 
       <div className="flex flex-1 flex-col p-4">
-        <p className="text-xs uppercase tracking-[0.18em] text-turquesa-oscuro">{producto.categoria.nombre}</p>
+        <p className="text-xs uppercase tracking-[0.18em] text-naranja-oscuro">{producto.categoria.nombre}</p>
         <h2 className="mt-1 border-b border-tinta pb-1 text-xl font-medium leading-snug">{producto.nombre}</h2>
         {producto.descripcion && <p className="mt-2 line-clamp-2 text-sm text-tinta/70">{producto.descripcion}</p>}
 

@@ -5,7 +5,7 @@ import { useAuthStore } from '../../store/authStore'
 import { useCantidadEnCarrito } from '../../store/cartStore'
 
 function claseEnlace({ isActive }: { isActive: boolean }): string {
-  return `block px-1 py-1 text-sm uppercase tracking-[0.14em] underline-offset-8 transition-colors hover:text-turquesa ${isActive ? 'text-turquesa underline decoration-2' : 'text-white/85'}`
+  return `block px-1 py-1 text-sm uppercase tracking-[0.14em] underline-offset-8 transition-colors hover:text-naranja ${isActive ? 'text-naranja underline decoration-2' : 'text-white/85'}`
 }
 
 export default function Navbar() {
@@ -64,7 +64,7 @@ export default function Navbar() {
           <NavLink to="/carrito" className={claseEnlace} onClick={cerrarMenu}>
             Carrito
             {cantidad > 0 && (
-              <span className="ml-2 inline-flex min-w-5 items-center justify-center bg-turquesa px-1.5 text-xs font-semibold text-white">
+              <span className="ml-2 inline-flex min-w-5 items-center justify-center bg-naranja px-1.5 text-xs font-semibold text-carbon">
                 {cantidad}
               </span>
             )}
@@ -93,7 +93,7 @@ export default function Navbar() {
                   type="button"
                   onClick={cerrarSesion}
                   disabled={saliendo}
-                  className="border border-white/60 px-3 py-1.5 text-xs uppercase tracking-widest transition-colors hover:border-turquesa hover:bg-turquesa disabled:opacity-50"
+                  className="border border-white/60 px-3 py-1.5 text-xs uppercase tracking-widest transition-colors hover:border-naranja hover:bg-naranja hover:text-carbon disabled:opacity-50"
                 >
                   {saliendo ? 'Saliendo…' : 'Cerrar sesión'}
                 </button>
@@ -106,7 +106,7 @@ export default function Navbar() {
                 <Link
                   to="/register"
                   onClick={cerrarMenu}
-                  className="bg-turquesa px-3 py-1.5 text-xs uppercase tracking-widest transition-colors hover:bg-turquesa-oscuro"
+                  className="bg-naranja px-3 py-1.5 text-xs font-semibold uppercase tracking-widest text-carbon transition-colors hover:bg-naranja-oscuro hover:text-white"
                 >
                   Crear cuenta
                 </Link>

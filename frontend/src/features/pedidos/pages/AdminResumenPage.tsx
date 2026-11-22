@@ -35,7 +35,7 @@ export default function AdminResumenPage() {
           <TarjetaResumen titulo="En preparación" valor={String(resumen.data.en_preparacion)} detalle="En cocina" acento="bg-sky-500" />
           <TarjetaResumen titulo="Entregados" valor={String(resumen.data.entregados)} detalle="Completados" acento="bg-emerald-500" />
           <TarjetaResumen titulo="Cancelados" valor={String(resumen.data.cancelados)} detalle="Stock restituido" acento="bg-stone-400" />
-          <TarjetaResumen titulo="Pedidos de hoy" valor={String(resumen.data.pedidos_hoy)} detalle="Creados desde las 00:00" acento="bg-turquesa" />
+          <TarjetaResumen titulo="Pedidos de hoy" valor={String(resumen.data.pedidos_hoy)} detalle="Creados desde las 00:00" acento="bg-naranja" />
           <TarjetaResumen
             titulo="Ingresos entregados"
             valor={formatearPrecio(resumen.data.ingresos_entregados)}

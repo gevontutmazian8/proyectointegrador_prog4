@@ -64,7 +64,7 @@ export default function StockForm({ producto, errorServidor, onGuardar, onCancel
           <label className="flex items-center gap-2 text-sm">
             <input
               type="checkbox"
-              className="h-4 w-4 accent-turquesa"
+              className="h-4 w-4 accent-naranja"
               checked={field.state.value}
               onChange={(e) => field.handleChange(e.target.checked)}
             />

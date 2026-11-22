@@ -182,7 +182,7 @@ export default function ProductoForm({ producto, categorias, errorServidor, onGu
             <label className="flex items-center gap-2 self-end pb-3 text-sm">
               <input
                 type="checkbox"
-                className="h-4 w-4 accent-turquesa"
+                className="h-4 w-4 accent-naranja"
                 checked={field.state.value}
                 onChange={(e) => field.handleChange(e.target.checked)}
               />

@@ -42,7 +42,7 @@ export default function RegisterPage() {
       pie={
         <>
           ¿Ya tenés cuenta?{' '}
-          <Link to="/login" className="font-medium text-turquesa-oscuro underline-offset-4 hover:underline">
+          <Link to="/login" className="font-medium text-naranja-oscuro underline-offset-4 hover:underline">
             Ingresá
           </Link>
         </>

@@ -15,7 +15,7 @@ export default function ImagenProducto({ url, nombre, className = '' }: ImagenPr
       <div
         role="img"
         aria-label={nombre}
-        className={`flex items-center justify-center bg-crema text-4xl font-light text-turquesa-oscuro ${className}`}
+        className={`flex items-center justify-center bg-crema text-4xl font-light text-naranja-oscuro ${className}`}
       >
         {nombre.charAt(0).toUpperCase()}
       </div>

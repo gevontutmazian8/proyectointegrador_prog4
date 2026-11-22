@@ -80,7 +80,7 @@ export default function TablaDatos<T>({
                         <button
                           type="button"
                           onClick={header.column.getToggleSortingHandler()}
-                          className="inline-flex items-center gap-1 uppercase tracking-[0.12em] hover:text-turquesa"
+                          className="inline-flex items-center gap-1 uppercase tracking-[0.12em] hover:text-naranja-oscuro"
                         >
                           {flexRender(header.column.columnDef.header, header.getContext())}
                           <span aria-hidden="true" className="text-white/60">

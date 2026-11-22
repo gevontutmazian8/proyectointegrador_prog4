@@ -49,8 +49,8 @@ export default function Modal({ abierto, titulo, onCerrar, children, ancho = 'md
         className={`animar-entrada max-h-[92vh] w-full overflow-y-auto bg-white p-6 shadow-[8px_8px_0_rgb(0_0_0/0.18)] focus:outline-none ${ancho === 'lg' ? 'sm:max-w-2xl' : 'sm:max-w-md'}`}
       >
         <div className="mb-5 flex items-start justify-between gap-4">
-          <h2 id={tituloId} className="flex items-center gap-3 text-xl uppercase tracking-wide text-turquesa-oscuro">
-            <span aria-hidden="true" className="h-7 w-2 bg-turquesa" />
+          <h2 id={tituloId} className="flex items-center gap-3 text-xl uppercase tracking-wide text-naranja-oscuro">
+            <span aria-hidden="true" className="h-7 w-2 bg-naranja" />
             {titulo}
           </h2>
           <button

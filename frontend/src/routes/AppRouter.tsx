@@ -23,7 +23,7 @@ function NoEncontrada() {
         titulo="Página no encontrada"
         descripcion="La dirección no existe o fue movida."
         accion={
-          <Link to="/" className="bg-carbon px-5 py-2.5 text-sm uppercase tracking-[0.12em] text-white hover:bg-turquesa-oscuro">
+          <Link to="/" className="bg-carbon px-5 py-2.5 text-sm uppercase tracking-[0.12em] text-white hover:bg-naranja-oscuro">
             Ir al catálogo
           </Link>
         }

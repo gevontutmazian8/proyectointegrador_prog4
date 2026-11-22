@@ -26,7 +26,7 @@ export default function CarritoPage() {
           accion={
             <Link
               to="/"
-              className="bg-carbon px-5 py-2.5 text-sm uppercase tracking-[0.12em] text-white hover:bg-turquesa-oscuro"
+              className="bg-carbon px-5 py-2.5 text-sm uppercase tracking-[0.12em] text-white hover:bg-naranja-oscuro"
             >
               Ver catálogo
             </Link>

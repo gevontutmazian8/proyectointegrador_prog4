@@ -75,7 +75,7 @@ export default function FiltrosCatalogo({
       <label className="flex items-center gap-2 pb-2.5 text-sm text-tinta">
         <input
           type="checkbox"
-          className="h-4 w-4 accent-turquesa"
+          className="h-4 w-4 accent-naranja"
           checked={soloDisponibles}
           onChange={(e) => onSoloDisponibles(e.target.checked)}
         />

@@ -10,11 +10,11 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const VARIANTES: Record<Variante, string> = {
-  primario: 'bg-carbon text-white hover:bg-turquesa-oscuro',
-  acento: 'bg-turquesa text-white hover:bg-turquesa-oscuro',
+  primario: 'bg-carbon text-white hover:bg-naranja-oscuro',
+  acento: 'bg-naranja font-semibold text-carbon hover:bg-naranja-oscuro hover:text-white',
   secundario: 'border border-tinta/30 bg-white text-tinta hover:border-tinta hover:bg-arena',
   peligro: 'border border-ladrillo/40 bg-white text-ladrillo hover:bg-ladrillo hover:text-white',
-  texto: 'text-tinta underline-offset-4 hover:text-turquesa-oscuro hover:underline',
+  texto: 'text-tinta underline-offset-4 hover:text-naranja-oscuro hover:underline',
 }
 
 const TAMANOS: Record<Tamano, string> = {

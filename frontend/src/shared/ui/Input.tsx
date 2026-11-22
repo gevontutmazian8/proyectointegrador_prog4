@@ -1,10 +1,10 @@
 import type { InputHTMLAttributes, ReactNode, SelectHTMLAttributes, TextareaHTMLAttributes } from 'react'
 
 const ESTILO_CONTROL =
-  'w-full border bg-white px-3 py-2.5 text-sm text-tinta placeholder:text-tinta/40 transition-colors focus:outline-none focus:ring-2 focus:ring-turquesa/30 disabled:bg-arena disabled:text-tinta/50'
+  'w-full border bg-white px-3 py-2.5 text-sm text-tinta placeholder:text-tinta/40 transition-colors focus:outline-none focus:ring-2 focus:ring-naranja/30 disabled:bg-arena disabled:text-tinta/50'
 
 function estilo(error?: string): string {
-  return `${ESTILO_CONTROL} ${error ? 'border-ladrillo focus:border-ladrillo' : 'border-tinta/25 focus:border-turquesa'}`
+  return `${ESTILO_CONTROL} ${error ? 'border-ladrillo focus:border-ladrillo' : 'border-tinta/25 focus:border-naranja'}`
 }
 
 interface CampoProps {

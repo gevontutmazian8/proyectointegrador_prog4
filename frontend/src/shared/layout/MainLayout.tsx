@@ -30,14 +30,14 @@ interface EncabezadoProps {
   acciones?: ReactNode
 }
 
-/** Título de sección con el bloque turquesa a la izquierda (identidad de catálogo). */
+/** Título de sección con el bloque naranja a la izquierda (identidad de catálogo). */
 export function EncabezadoPagina({ titulo, descripcion, acciones }: EncabezadoProps) {
   return (
     <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
       <div className="flex items-center gap-4">
-        <span aria-hidden="true" className="h-14 w-3.5 shrink-0 bg-turquesa" />
+        <span aria-hidden="true" className="h-14 w-3.5 shrink-0 bg-naranja" />
         <div>
-          <h1 className="text-3xl uppercase leading-none tracking-wide text-turquesa-oscuro sm:text-4xl">{titulo}</h1>
+          <h1 className="text-3xl uppercase leading-none tracking-wide text-naranja-oscuro sm:text-4xl">{titulo}</h1>
           {descripcion && <p className="mt-1.5 text-tinta/70">{descripcion}</p>}
         </div>
       </div>

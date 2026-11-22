@@ -43,14 +43,14 @@ export default function LoginPage() {
       pie={
         <>
           ¿No tenés cuenta?{' '}
-          <Link to="/register" className="font-medium text-turquesa-oscuro underline-offset-4 hover:underline">
+          <Link to="/register" className="font-medium text-naranja-oscuro underline-offset-4 hover:underline">
             Registrate
           </Link>
         </>
       }
     >
       {estado.registrado && !errorServidor && (
-        <p className="mb-6 border-l-4 border-turquesa bg-turquesa/10 px-4 py-2 text-sm text-turquesa-oscuro">
+        <p className="mb-6 border-l-4 border-naranja bg-naranja/10 px-4 py-2 text-sm text-naranja-oscuro">
           Cuenta creada. Ingresá con tu contraseña.
         </p>
       )}

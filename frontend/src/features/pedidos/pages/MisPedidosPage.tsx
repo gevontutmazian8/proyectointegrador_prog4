@@ -41,7 +41,7 @@ export default function MisPedidosPage() {
       <EncabezadoPagina titulo="Mis pedidos" descripcion="Seguí el estado de tus pedidos." />
 
       {pedidoCreado && pedidos.data?.items.find((p) => p.id === pedidoCreado)?.estado === 'PENDIENTE' && (
-        <p className="animar-entrada mb-6 border-l-4 border-turquesa bg-turquesa/10 px-4 py-3 text-turquesa-oscuro">
+        <p className="animar-entrada mb-6 border-l-4 border-naranja bg-naranja/10 px-4 py-3 text-naranja-oscuro">
           ¡Listo! Tu pedido #{pedidoCreado} fue creado y está pendiente de preparación.
         </p>
       )}
@@ -55,7 +55,7 @@ export default function MisPedidosPage() {
           titulo="Todavía no hiciste pedidos"
           descripcion="Cuando confirmes uno, vas a poder seguirlo desde acá."
           accion={
-            <Link to="/" className="bg-carbon px-5 py-2.5 text-sm uppercase tracking-[0.12em] text-white hover:bg-turquesa-oscuro">
+            <Link to="/" className="bg-carbon px-5 py-2.5 text-sm uppercase tracking-[0.12em] text-white hover:bg-naranja-oscuro">
               Ir al catálogo
             </Link>
           }

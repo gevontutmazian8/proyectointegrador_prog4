@@ -19,7 +19,7 @@ export default function AdminLayout() {
               key={s.ruta}
               to={s.ruta}
               className={({ isActive }) =>
-                `whitespace-nowrap border-b-2 px-4 py-3 text-sm uppercase tracking-[0.12em] transition-colors ${isActive ? 'border-turquesa-oscuro text-tinta' : 'border-transparent text-tinta/60 hover:text-tinta'}`
+                `whitespace-nowrap border-b-2 px-4 py-3 text-sm uppercase tracking-[0.12em] transition-colors ${isActive ? 'border-naranja-oscuro text-tinta' : 'border-transparent text-tinta/60 hover:text-tinta'}`
               }
             >
               {s.nombre}

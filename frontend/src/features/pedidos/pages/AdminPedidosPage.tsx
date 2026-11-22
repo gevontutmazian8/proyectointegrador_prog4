@@ -11,6 +11,7 @@ import Button from '../../../shared/ui/Button'
 import { Select } from '../../../shared/ui/Input'
 import { formatearFecha, formatearPrecio } from '../../../shared/utils/formato'
 import DetallePedidoModal from '../components/DetallePedidoModal'
+import { useUsuarios } from '../../usuarios/hooks/useUsuarios'
 import { useCambiarEstadoPedido, usePedidos } from '../hooks/usePedidos'
 import { ESTADOS, NOMBRE_ESTADO, TRANSICIONES, type EstadoPedido, type Pedido } from '../types/pedido'
 
@@ -36,6 +37,12 @@ export default function AdminPedidosPage() {
   // El panel trae hasta 100 pedidos y pagina del lado del cliente con TanStack Table.
   const pedidos = usePedidos({ skip: 0, limit: 100, estado })
   const cambiarEstado = useCambiarEstadoPedido()
+  // PedidoRead solo trae usuario_id: el nombre del cliente sale del listado de usuarios del panel.
+  const usuarios = useUsuarios()
+  const nombresClientes = useMemo(
+    () => new Map((usuarios.data ?? []).map((u) => [u.id, `${u.full_name} (@${u.username})`])),
+    [usuarios.data],
+  )
 
   async function confirmarCambio() {
     if (!cambio) return
@@ -56,7 +63,11 @@ export default function AdminPedidosPage() {
         accessorFn: (p) => p.created_at,
         cell: ({ row }) => formatearFecha(row.original.created_at),
       },
-      { id: 'usuario', header: 'Cliente', accessorFn: (p) => p.usuario_id, cell: ({ row }) => `Usuario ${row.original.usuario_id}` },
+      {
+        id: 'usuario',
+        header: 'Cliente',
+        accessorFn: (p) => nombresClientes.get(p.usuario_id) ?? `Usuario ${p.usuario_id}`,
+      },
       {
         id: 'estado',
         header: 'Estado',
@@ -116,7 +127,7 @@ export default function AdminPedidosPage() {
         },
       },
     ],
-    [cambiarEstado],
+    [cambiarEstado, nombresClientes],
   )
 
   return (
