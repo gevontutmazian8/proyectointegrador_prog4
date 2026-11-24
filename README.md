@@ -7,8 +7,8 @@ pedidos y usuarios desde un panel.
 Trabajo Práctico Integrador · **Programación 4** · Tecnicatura Universitaria en Programación a Distancia (UTN).
 Alumno: Gevont Utmazian.
 
-- **Repositorio público:** _pendiente — completar con la URL de GitHub_
-- **Video de demostración:** _pendiente — completar con el enlace público_
+- **Repositorio:** https://github.com/gevontutmazian8/proyectointegrador_prog4
+- **Video de demostración:** https://youtu.be/2w1nXEkj4aI
 
 ## Tecnologías
 
